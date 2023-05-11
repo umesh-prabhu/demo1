@@ -25,3 +25,6 @@ Add roles
 then
 
 getByRole('list', { name: 'topics' }).getByRole('link', { name: 'architecture' })
+
+Commands
+npx playwright codegen new.aldi.us
