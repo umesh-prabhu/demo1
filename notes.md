@@ -26,5 +26,29 @@ then
 
 getByRole('list', { name: 'topics' }).getByRole('link', { name: 'architecture' })
 
+Custom ID's
+  <div class="inputBox">
+    <input data-test-id="username" type="text" required="required">
+        <span>Username</span>
+  </div>
+
+  then
+
+  await page.getByTestId("username").fill("Butch");          // new way
+  await page.locator("data-test-id=username").fill("Butch"); // old way
+
+  Can be changed in config.. does not need to be data-test-id
+  # playwright.config.ts
+const config: PlaywrightTestConfig = {
+  use: {
+    browserName: "chromium",
+    headless: true,
+    screenshot: "only-on-failure",
+    testIdAttribute: 'data-test-id',
+  },
+};
+
+                
+
 Commands
 npx playwright codegen new.aldi.us
