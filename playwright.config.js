@@ -31,6 +31,7 @@ module.exports = defineConfig({
     trace: 'on-first-retry',
     launchOptions:{
       slowMo:500,
+      args: ['--deny-permission-prompts']
     }
   },
 
