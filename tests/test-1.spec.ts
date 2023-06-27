@@ -1,13 +1,14 @@
 import { test, expect } from '@playwright/test';
 
 test('test', async ({ page }) => {
-  //  await page.goto('https://help.aldi.us/s/gift-card-balance')
-  // page.waitForLoadState('domcontentloaded')
-  // await page.screenshot({ path: 'gift-card-page.png', fullPage: true });
+    //await page.goto('https://help.aldi.us/s/gift-card-balance')
+    await page.goto('https://playwright.dev/')
+   page.waitForLoadState('domcontentloaded')
+  await page.screenshot({ path: 'gift-card-page.png', fullPage: true });
   console.log('umesh test')
-  await page.goto('https://new.aldi.us/');
+ /*  await page.goto('https://new.aldi.us/');
   let xx =  await page.getByRole('link', { name: 'Account' })
 await xx.focus();
 xx = await page.getByRole('button', { name: 'Log in' })
-  console.log('xx',xx)
+  console.log('xx',xx) */
 });
