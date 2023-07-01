@@ -62,7 +62,9 @@ npx playwright test --debug
 npx playwright show-report
 npx playwright test --help
 
-Single test run
+Single test run with speciic title
+npx playwright test -g "add a todo item"
+Single test file run
 npx playwright test tests/todo-page.spec.ts
 Run a set 
 npx playwright test tests/todo-page/ tests/landing-page/
