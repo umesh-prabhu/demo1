@@ -70,3 +70,4 @@ Run a set
 npx playwright test tests/todo-page/ tests/landing-page/
 Run where file name contains myspec or my-spec-2
 npx playwright test my-spec my-spec-2
+https://playwright.dev/docs/auth
