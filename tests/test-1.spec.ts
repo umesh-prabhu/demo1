@@ -14,3 +14,7 @@ await xx.focus();
 xx = await page.getByRole('button', { name: 'Log in' })
   console.log('xx',xx) */
 });
+test('umesh hover test1', async ({ page }) => {
+  await page.goto('https://new.aldi.us/');
+  await page.getByRole('button', { name: 'Recipes' }).hover()
+});
