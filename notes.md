@@ -53,20 +53,23 @@ const config: PlaywrightTestConfig = {
   },
 };
 
-                
+
 
 Commands
 npx playwright codegen new.aldi.us
 npx playwright test --headed
 npx playwright test --debug
+
 npx playwright show-report
+https://playwright.dev/docs/test-annotations#custom-annotations
+
 npx playwright test --help
 
 Single test run with speciic title
 npx playwright test -g "add a todo item"
 Single test file run
 npx playwright test tests/todo-page.spec.ts
-Run a set 
+Run a set
 npx playwright test tests/todo-page/ tests/landing-page/
 Run where file name contains myspec or my-spec-2
 npx playwright test my-spec my-spec-2
