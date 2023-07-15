@@ -5,4 +5,4 @@ test('simple hover menu', async ({ page }) => {
   await page.getByRole('button', { name: 'Recipes' }).hover()
 });
 
-// npx playwright test tests/simple-test.spec.js
+// npx playwright test tests/simple-test.spec.js 
