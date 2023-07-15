@@ -1,3 +1,24 @@
+https://playwright.dev/docs/navigations
+best practices
+  await page.goto('https://example.com');
+
+    // waitForSelector example
+    await page.waitForSelector('h1'); // Wait for an h1 element to appear on the page
+
+    // waitForNavigation example
+    await Promise.all([
+      page.waitForNavigation(), // Wait for the next navigation
+      page.click('a') // Click on an anchor tag to trigger navigation
+    ]);
+
+    // waitForFunction example
+    const isButtonDisabled = await page.waitForFunction(() => {
+      const button = document.querySelector('button');
+      return button.disabled; // Wait until the button becomes disabled
+    });
+
+    console.log('Button is disabled:', isButtonDisabled);
+
 
 docs
 https://playwright.dev/docs/intro
