@@ -7,7 +7,7 @@ test('Website Test', async ({ page }) => {
   const searchInput =  page.getByPlaceholder('What can we help you find?');
   await searchInput.type('apples');
 
-  // // Example 2: Locating an element by CSS selector
+  //// Example 2: Locating an element by CSS selector
   // const searchButton = await page.$('.search__icon');
   // await searchButton.click();
 
