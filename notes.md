@@ -20,13 +20,6 @@ best practices
     console.log('Button is disabled:', isButtonDisabled);
 
 
-docs
-https://playwright.dev/docs/intro
-
-Channel
-https://www.youtube.com/channel/UC46Zj8pDH5tDosqm1gd7WTg
-
-https://playwright.dev/docs/accessibility-testing
 Extends Jest's expect .. list here
 https://playwright.dev/docs/test-assertions
 
@@ -74,22 +67,8 @@ const config: PlaywrightTestConfig = {
   },
 };
 
-
-
-Commands
-npx playwright codegen new.aldi.us
-npx playwright test --headed
-npx playwright test --debug
-
-npx playwright show-report
-https://playwright.dev/docs/test-annotations#custom-annotations
-
-npx playwright test --help
-
 Single test run with speciic title
 npx playwright test -g "add a todo item"
-Single test file run
-npx playwright test tests/todo-page.spec.ts
 Run a set
 npx playwright test tests/todo-page/ tests/landing-page/
 Run where file name contains myspec or my-spec-2
