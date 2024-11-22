@@ -29,10 +29,13 @@ module.exports = defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
-    // launchOptions:{
+    viewport: null,
+     launchOptions:{
+      
+      args: ['--start-maximized']
     //   slowMo:500,
     //   args: ['--deny-permission-prompts']
-    // }
+   }
   },
 
   /* Configure projects for major browsers */
